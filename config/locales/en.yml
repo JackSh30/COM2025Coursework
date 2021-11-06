@@ -32,3 +32,8 @@
 en:
   app_title: Music Library
   app_description: An application to store details of your favourite artists, albums and songs.
+
+  home:
+    home:
+      title: Music Library
+      welcome: Welcome to my music library!
