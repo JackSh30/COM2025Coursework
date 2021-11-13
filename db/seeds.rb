@@ -5,3 +5,38 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+beatles = Artist.where(name: 'The Beatles').first
+beatles.delete if beatles
+
+artists = Artist.create([name: 'The Beatles',
+                          description: 'The greatest band of all time',
+                          active: false])
+
+stones = Artist.where(name: 'The Rolling Stones').first
+stones.delete if stones
+
+artists = Artist.create([name: 'The Rolling Stones',
+                          description: 'The greatest blues rock band of all time',
+                          active: true])
+
+stevie = Artist.where(name: 'Stevie Wonder').first
+stevie.delete if stevie
+
+artists = Artist.create([name: 'Stevie Wonder',
+                          description: 'The blind maestro',
+                          active: true])
+
+aretha = Artist.where(name: 'Aretha Franklin').first
+aretha.delete if aretha
+
+artists = Artist.create([name: 'Aretha Franklin',
+                          description: 'The greatest singer of all time',
+                          active: false])
+
+dylan = Artist.where(name: 'Bob Dylan').first
+dylan.delete if dylan
+
+artists = Artist.create([name: 'Bob Dylan',
+                          description: 'The voice of a generation',
+                          active: true])
