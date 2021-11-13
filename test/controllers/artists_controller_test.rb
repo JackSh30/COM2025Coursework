@@ -42,7 +42,7 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
     assert_difference('Artist.count', -1) do
       delete artist_url(@artist)
     end
-
+    
     assert_redirected_to artists_url
   end
 end

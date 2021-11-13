@@ -10,6 +10,8 @@
   %b Active:
   = @artist.active
 
-= link_to 'Edit', edit_artist_path(@artist)
+%p= link_to t('artists.add_album'), new_album_path(artist_id: @artist)
+
+= link_to t('artists.edit_artist'), edit_artist_path(@artist)
 \|
-= link_to 'Back', artists_path
+= link_to t('artists.return'), artists_path

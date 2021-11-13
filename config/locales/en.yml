@@ -55,3 +55,9 @@ en:
     request_contact:
       no_email: You must supply an email address
       email_sent: Thank you. We will be in touch shortly.
+
+  artists:
+    add_album: New Album
+    edit_artist: Edit
+    return: Back
+    success: Album was successfully created.
