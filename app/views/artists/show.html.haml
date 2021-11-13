@@ -10,6 +10,17 @@
   %b Active:
   = @artist.active
 
+%p Albums:
+%table
+  %tbody
+    - @artist.albums.each do |album|
+      %tr{id: "album_#{album.id}"}
+      %td= album.title
+      %td= album.release
+      %td= link_to 'Show', album
+      %td= link_to 'Edit', edit_album_path(album)
+      %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
+
 %p= link_to t('artists.add_album'), new_album_path(artist_id: @artist)
 
 = link_to t('artists.edit_artist'), edit_artist_path(@artist)
