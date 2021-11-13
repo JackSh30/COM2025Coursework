@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: MyString 1
   description: MyText
-  active: false
+  active: true || false
 
 two:
-  name: MyString
+  name: MyString 2
   description: MyText
-  active: false
+  active: true || false

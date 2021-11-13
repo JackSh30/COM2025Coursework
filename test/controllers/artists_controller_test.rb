@@ -17,7 +17,7 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create artist" do
     assert_difference('Artist.count') do
-      post artists_url, params: { artist: { active: @artist.active, description: @artist.description, name: @artist.name } }
+      post artists_url, params: { artist: { active: @artist.active, description: @artist.description, name: @artist.name + " create"} }
     end
 
     assert_redirected_to artist_url(Artist.last)
