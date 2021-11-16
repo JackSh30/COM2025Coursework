@@ -60,4 +60,11 @@ en:
     add_album: New Album
     edit_artist: Edit
     return: Back
+    success: Artist was successfully created.
+
+  albums:
+    add_song: Add Song
     success: Album was successfully created.
+
+  songs:
+    success: Song was successfully created.

@@ -1,0 +1,20 @@
+= form_for @song do |f|
+  - if @song.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@song.errors.count, "error")} prohibited this song from being saved:"
+      %ul
+        - @song.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :album
+    %p= @song.album.title
+    = f.hidden_field :album_id, value: @song.album.id
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :length
+    = f.text_field :length
+  .actions
+    = f.submit 'Save'

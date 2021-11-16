@@ -40,3 +40,14 @@ dylan.delete if dylan
 artists = Artist.create([name: 'Bob Dylan',
                           description: 'The voice of a generation',
                           active: true])
+=begin
+whiteAlbum = Album.where(title: 'The Beatles').first
+whiteAlbum.delete if whiteAlbum
+
+albums = Album.create([title: 'The Beatles',
+                        artist: 'The Beatles',
+                        description: 'The greatest album of all time',
+                        release: 1968-11-22,
+                        numOfSongs: 30,
+                        length: 93.00])
+=end

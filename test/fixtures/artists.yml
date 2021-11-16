@@ -3,9 +3,9 @@
 one:
   name: MyString 1
   description: MyText
-  active: true || false
+  active: false
 
 two:
   name: MyString 2
   description: MyText
-  active: true || false
+  active: true
