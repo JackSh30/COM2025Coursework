@@ -18,7 +18,7 @@
     = f.text_area :description
   .field
     = f.label :release
-    = f.date_select :release
+    = f.date_select(:release, {start_year: 1950, end_year: Date.today.year})
   .field
     = f.label :numOfSongs
     = f.number_field :numOfSongs
