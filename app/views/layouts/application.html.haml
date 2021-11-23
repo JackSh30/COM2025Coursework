@@ -17,12 +17,10 @@
 
   %body
 
-    - flash.each do |key, value|
-      = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
 
-    =render "layouts/header"
-    =render "layouts/navbar"
+    =render "shared/header"
+    =render "shared/navbar"
 
     = yield
 
-    =render "layouts/footer"
+    =render "shared/footer"

@@ -1,4 +1,5 @@
 %h1 Listing songs
+%h2 To Create a new song, go to an album and click 'Add Song'!
 
 %table
   %thead
@@ -21,5 +22,3 @@
         %td= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
-
-= link_to 'New Song', new_song_path
