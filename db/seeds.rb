@@ -44,7 +44,7 @@ artists = Artist.create([name: 'Bob Dylan',
 artists = Artist.create([name: 'example',
                           description: 'The blind maestro',
                           ])
-=begin
+
 whiteAlbum = Album.where(title: 'The Beatles').first
 whiteAlbum.delete if whiteAlbum
 
@@ -53,5 +53,44 @@ albums = Album.create([title: 'The Beatles',
                         description: 'The greatest album of all time',
                         release: 1968-11-22,
                         numOfSongs: 30,
-                        length: 93.00])
-=end
+                        length: 93.33])
+
+exile = Album.where(title: 'Exile on Main St.').first
+exile.delete if exile
+
+albums = Album.create([title: 'Exile on Main St.',
+                        artist: 'The Rolling Stones',
+                        description: 'Largely recorded in the South of France',
+                        release: 1972-5-12,
+                        numOfSongs: 18,
+                        length: 67.07])
+
+innervisions = Album.where(title: 'Innervisions').first
+innervisions.delete if innervisions
+
+albums = Album.create([title: 'Innervisions',
+                        artist: 'Stevie Wonder',
+                        description: 'The pinnacle of psychedelic soul',
+                        release: 1973-8-3,
+                        numOfSongs: 9,
+                        length: 44.15])
+
+lovedAMan = Album.where(title: 'I Never Loved a Man the Way I Love You').first
+lovedAMan.delete if lovedAMan
+
+albums = Album.create([title: 'I Never Loved a Man the Way I Love You',
+                        artist: 'Aretha Franklin',
+                        description: 'Includes her hit cover of Otis Redding\'s Respect',
+                        release: 1967-3-10,
+                        numOfSongs: 11,
+                        length: 32.51])
+
+blonde = Album.where(title: 'Blonde on Blonde').first
+blonde.delete if blonde
+
+albums = Album.create([title: 'Blonde on Blonde',
+                        artist: 'Bob Dylan',
+                        description: 'The third album in Dylan\'s electric trilogy',
+                        release: 1966-6-20,
+                        numOfSongs: 14,
+                        length: 72.57])
