@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class AlbumsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    @user = users(:one)
+    sign_in @user
     @album = albums(:one)
     @artist = artists(:one)
   end

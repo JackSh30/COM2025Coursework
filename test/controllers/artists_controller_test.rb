@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class ArtistsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
+    @user = users(:one)
+    sign_in @user
     @artist = artists(:one)
   end
 
@@ -42,7 +46,7 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
     assert_difference('Artist.count', -1) do
       delete artist_url(@artist)
     end
-    
+
     assert_redirected_to artists_url
   end
 end
