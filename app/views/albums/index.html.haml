@@ -4,8 +4,8 @@
 %table
   %thead
     %tr
-      %th Artist
       %th Title
+      %th Artist
       %th Description
       %th Release Date
       %th Number of songs
@@ -17,8 +17,8 @@
   %tbody
     - @albums.each do |album|
       %tr
-        %td= album.artist.name
         %td= album.title
+        %td= album.artist.name
         %td= album.description
         %td= album.release
         %td= album.numOfSongs
