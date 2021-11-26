@@ -41,10 +41,6 @@ artists = Artist.create([name: 'Bob Dylan',
                           description: 'The voice of a generation',
                           active: true])
 
-artists = Artist.create([name: 'example',
-                          description: 'The blind maestro',
-                          ])
-
 whiteAlbum = Album.where(title: 'The Beatles').first
 whiteAlbum.delete if whiteAlbum
 
