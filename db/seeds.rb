@@ -49,7 +49,7 @@ whiteAlbum = Album.where(title: 'The Beatles').first
 whiteAlbum.delete if whiteAlbum
 
 albums = Album.create([title: 'The Beatles',
-                        artist: 'The Beatles',
+                        artist_id: 1,
                         description: 'The greatest album of all time',
                         release: 1968-11-22,
                         numOfSongs: 30,
@@ -59,7 +59,7 @@ exile = Album.where(title: 'Exile on Main St.').first
 exile.delete if exile
 
 albums = Album.create([title: 'Exile on Main St.',
-                        artist: 'The Rolling Stones',
+                        artist_id: 2,
                         description: 'Largely recorded in the South of France',
                         release: 1972-5-12,
                         numOfSongs: 18,
@@ -69,7 +69,7 @@ innervisions = Album.where(title: 'Innervisions').first
 innervisions.delete if innervisions
 
 albums = Album.create([title: 'Innervisions',
-                        artist: 'Stevie Wonder',
+                        artist_id: 3,
                         description: 'The pinnacle of psychedelic soul',
                         release: 1973-8-3,
                         numOfSongs: 9,
@@ -79,7 +79,7 @@ lovedAMan = Album.where(title: 'I Never Loved a Man the Way I Love You').first
 lovedAMan.delete if lovedAMan
 
 albums = Album.create([title: 'I Never Loved a Man the Way I Love You',
-                        artist: 'Aretha Franklin',
+                        artist_id: 4,
                         description: 'Includes her hit cover of Otis Redding\'s Respect',
                         release: 1967-3-10,
                         numOfSongs: 11,
@@ -89,7 +89,7 @@ blonde = Album.where(title: 'Blonde on Blonde').first
 blonde.delete if blonde
 
 albums = Album.create([title: 'Blonde on Blonde',
-                        artist: 'Bob Dylan',
+                        artist_id: 5,
                         description: 'The third album in Dylan\'s electric trilogy',
                         release: 1966-6-20,
                         numOfSongs: 14,
