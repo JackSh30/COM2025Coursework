@@ -32,6 +32,8 @@
 en:
   app_title: Music Library
   app_description: An application to store details of your favourite artists, albums and songs.
+  confirm: Are you sure?
+  save: Save
 
   home:
     home:
@@ -65,6 +67,11 @@ en:
   albums:
     add_song: Add Song
     success: Album was successfully created.
+    show: View Details
+    edit: Edit Album
+    destroy: Delete Album
+    view: View Album
+    view_all: View All Albums
 
   songs:
     success: Song was successfully created.

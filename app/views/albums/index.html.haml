@@ -23,8 +23,8 @@
         %td= album.release
         %td= album.numOfSongs
         %td= album.length
-        %td= link_to 'Show', album
-        %td= link_to 'Edit', edit_album_path(album)
-        %td= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to t('albums.show'), album
+        %td= link_to t('albums.edit'), edit_album_path(album)
+        %td= link_to t('albums.destroy'), album, method: :delete, data: { confirm: t('confirm') }
 
 %br
