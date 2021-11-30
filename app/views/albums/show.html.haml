@@ -1,9 +1,9 @@
 %p
-  %b Artist:
-  = @album.artist.name
-%p
   %b Title:
   = @album.title
+%p
+  %b Artist:
+  = @album.artist.name
 %p
   %b Description:
   = @album.description
@@ -14,7 +14,7 @@
   %b Number of Songs:
   = @album.numOfSongs
 %p
-  %b Length:
+  %b Length (mins):
   = @album.length
 
 %p Songs:
@@ -24,12 +24,12 @@
       %trr{id: "song_#{song.id}"}
         %td= song.title
         %td= song.length
-        %td= link_to 'Show', song
-        %td= link_to 'Edit', edit_song_path(song)
-        %td= link_to 'Destroy', song, :method => :delete, :data => { :confirm => t('confirm') }, :remote => true
+        %td= link_to t('songs.show'), song
+        %td= link_to t('songs.edit'), edit_song_path(song)
+        %td= link_to t('songs.destroy'), song, :method => :delete, :data => { :confirm => t('confirm') }, :remote => true
 
-%p= link_to t('add_song'), new_song_path(album_id: @album)
+%p= link_to t('add_song'), new_song_path(album_id: @album), :class => "add_tuple"
 
-= link_to 'Edit', edit_album_path(@album)
+= link_to t('albums.edit'), edit_album_path(@album)
 \|
-= link_to 'Back', albums_path
+= link_to t('albums.view_all'), albums_path

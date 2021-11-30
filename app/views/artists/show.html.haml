@@ -15,12 +15,12 @@
       %tr{id: "album_#{album.id}"}
       %td= album.title
       %td= album.release
-      %td= link_to 'Show', album
-      %td= link_to 'Edit', edit_album_path(album)
-      %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
+      %td= link_to t('albums.view'), album
+      %td= link_to t('albums.edit'), edit_album_path(album)
+      %td= link_to t('albums.destroy'), album, :method => :delete, :data => { :confirm => t('confirm') }, :remote => true
 
-%p= link_to t('artists.add_album'), new_album_path(artist_id: @artist)
+%p= link_to t('artists.add_album'), new_album_path(artist_id: @artist), :class => "add_tuple"
 
-= link_to t('artists.edit_artist'), edit_artist_path(@artist)
+= link_to t('artists.edit'), edit_artist_path(@artist)
 \|
-= link_to t('artists.return'), artists_path
+= link_to t('artists.view_all'), artists_path

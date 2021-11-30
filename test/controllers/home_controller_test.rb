@@ -5,7 +5,7 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get root_url
     assert_response :success
     assert_select 'title', 'Music Library'
-    assert_select 'h1', 'Music Library'
+    assert_select 'h1', 'Home Page'
     assert_select 'p', 'Welcome to my music library!'
   end
 

@@ -37,7 +37,7 @@ en:
 
   home:
     home:
-      title: Music Library
+      title: Home Page
       welcome: Welcome to my music library!
 
     contact:
@@ -60,9 +60,17 @@ en:
 
   artists:
     add_album: New Album
-    edit_artist: Edit
     return: Back
     success: Artist was successfully created.
+    show: View Details
+    edit: Edit Artist
+    destroy: Delete Artist
+    view_all: View All Artists
+    view: View Artist
+    form:
+      name: "Artist:"
+      desc: "Description:"
+      active: "Active?:"
 
   albums:
     add_song: Add Song
@@ -72,9 +80,25 @@ en:
     destroy: Delete Album
     view: View Album
     view_all: View All Albums
+    form:
+      artist: "Artist:"
+      title: "Title:"
+      desc: "Description:"
+      release: "Release:"
+      numOfSongs: "Number Of Songs:"
+      length: "Length (mins):"
 
   songs:
     success: Song was successfully created.
+    show: View Details
+    edit: Edit Song
+    destroy: Delete Song
+    view: View Song
+    view_all: View All Songs
+    form:
+      album: "Album:"
+      title: "Title:"
+      length: "Length:"
 
   users:
     profile: View Account

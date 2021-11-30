@@ -7,23 +7,23 @@
           %li= message
 
   .field
-    = f.label :artist
+    = f.label t('albums.form.artist')
     %p= @album.artist.name
     = f.hidden_field :artist_id, value: @album.artist.id
   .field
-    = f.label :title
+    = f.label t('albums.form.title')
     = f.text_field :title
   .field
-    = f.label :description
+    = f.label t('albums.form.desc')
     = f.text_area :description
   .field
-    = f.label :release
+    = f.label t('albums.form.release')
     = f.date_select(:release, {start_year: 1950, end_year: Date.today.year})
   .field
-    = f.label :numOfSongs
+    = f.label t('albums.form.numOfSongs')
     = f.number_field :numOfSongs
   .field
-    = f.label :length
+    = f.label t('albums.form.length')
     = f.text_field :length
   .actions
     = f.submit t('save')

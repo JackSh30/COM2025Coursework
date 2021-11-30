@@ -2,12 +2,12 @@ body {
   background-color: #fff;
   color: #333;
   margin: 33px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
 }
 
@@ -108,5 +108,13 @@ table {
   tbody tr:last-of-type {
     border-bottom: 2px solid #2dd8fa;
   }
+}
 
+.add_tuple {
+    background-color: #2dd8fa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }

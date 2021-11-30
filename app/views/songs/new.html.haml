@@ -1,5 +1,8 @@
 %h1 New song
 
+%p{:id=>"tsandcs"} Have you read the terms & conditions?
+%input{:type => "checkbox"}/
+
 = render 'form'
 
-= link_to 'Back', songs_path
+= link_to t('songs.view_all'), songs_path

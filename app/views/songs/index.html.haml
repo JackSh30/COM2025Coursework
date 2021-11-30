@@ -19,8 +19,8 @@
         %td= song.album.title
         %td= song.album.artist.name
         %td= song.length
-        %td= link_to 'Show', song
-        %td= link_to 'Edit', edit_song_path(song)
-        %td= link_to 'Destroy', song, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to t('songs.show'), song
+        %td= link_to t('songs.edit'), edit_song_path(song)
+        %td= link_to t('songs.destroy'), song, method: :delete, data: { confirm: t('confirm') }
 
 %br
