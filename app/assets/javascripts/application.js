@@ -17,6 +17,16 @@
 //= require turbolinks
 //= require_tree .
 
-$document.on('turbolinks:load', function()) {
-  
-}
+//Function to enable a record to be created/edited only if a checkbox is ticked,
+//confirming the user has read the terms and conditions.
+$(document).on('turbolinks:load', function() {
+  $('.form_submit').prop('disabled', true);
+  $('#tsandcsCheck').click(function() {
+    if ($(this).is(':checked')) {
+            $('.form_submit').removeAttr('disabled'); //enable input
+
+        } else {
+            $('.form_submit').attr('disabled', true); //disable input
+        }
+  });
+});

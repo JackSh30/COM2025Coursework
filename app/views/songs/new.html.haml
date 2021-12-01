@@ -1,7 +1,11 @@
-%h1 New song
+%h1= t('songs.new_song')
 
-%p{:id=>"tsandcs"} Have you read the terms & conditions?
-%input{:type => "checkbox"}/
+%p{:id=>"tsandcs"}
+  = t('read')
+  = succeed "?" do
+    %a{:href => root_path}
+      = t('tsandcs')
+%input{:type => "checkbox", :id => "tsandcsCheck"}/
 
 = render 'form'
 

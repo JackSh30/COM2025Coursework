@@ -21,7 +21,7 @@
 %table
   %tbody
     - @album.songs.each do |song|
-      %trr{id: "song_#{song.id}"}
+      %tr{id: "song_#{song.id}"}
         %td= song.title
         %td= song.length
         %td= link_to t('songs.show'), song

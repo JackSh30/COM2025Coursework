@@ -1,4 +1,11 @@
-%h1 Editing artist
+%h1= t('artists.editing')
+
+%p{:id=>"tsandcs"}
+  = t('read')
+  = succeed "?" do
+    %a{:href => root_path}
+      = t('tsandcs')
+%input{:type => "checkbox", :id => "tsandcsCheck"}/
 
 = render 'form'
 

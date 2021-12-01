@@ -1,4 +1,11 @@
-%h1 New album
+%h1= t('albums.new_album')
+
+%p{:id=>"tsandcs"}
+  = t('read')
+  = succeed "?" do
+    %a{:href => root_path}
+      = t('tsandcs')
+%input{:type => "checkbox", :id => "tsandcsCheck"}/
 
 = render 'form'
 

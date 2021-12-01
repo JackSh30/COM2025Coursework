@@ -34,6 +34,8 @@ en:
   app_description: An application to store details of your favourite artists, albums and songs.
   confirm: Are you sure?
   save: Save
+  read: "Read the terms and conditions to save your changes. Have you read the"
+  tsandcs: terms and conditions
 
   home:
     home:
@@ -67,6 +69,8 @@ en:
     destroy: Delete Artist
     view_all: View All Artists
     view: View Artist
+    new_artist: New Artist
+    editing: Editing Artist
     form:
       name: "Artist:"
       desc: "Description:"
@@ -80,6 +84,8 @@ en:
     destroy: Delete Album
     view: View Album
     view_all: View All Albums
+    new_album: New Album
+    editing: Editing Album
     form:
       artist: "Artist:"
       title: "Title:"
@@ -95,6 +101,8 @@ en:
     destroy: Delete Song
     view: View Song
     view_all: View All Songs
+    new_song: New Song
+    editing: Editing Song
     form:
       album: "Album:"
       title: "Title:"
