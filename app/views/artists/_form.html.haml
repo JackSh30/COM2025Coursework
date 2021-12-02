@@ -1,7 +1,7 @@
 = form_for @artist do |f|
   - if @artist.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@artist.errors.count, "error")} prohibited this artist from being saved:"
+      %h2= "#{pluralize(@artist.errors.count, t('error'))}" + t('artists.failure')
       %ul
         - @artist.errors.full_messages.each do |message|
           %li= message

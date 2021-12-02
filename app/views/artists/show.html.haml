@@ -1,14 +1,14 @@
 %p
-  %b Name:
+  %b= t('artists.form.name')
   = @artist.name
 %p
-  %b Description:
+  %b= t('artists.form.desc')
   = @artist.description
 %p
-  %b Active?:
+  %b= t('artists.form.active')
   = @artist.active
 
-%p Albums:
+%p= t('artists.albums')
 %table
   %tbody
     - @artist.albums.each do |album|

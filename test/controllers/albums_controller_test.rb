@@ -13,6 +13,8 @@ class AlbumsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get albums_url
     assert_response :success
+    assert_select 'h2', 'ALBUMS'
+    assert_select 'h3', "To Create a new album, go to an artist and click 'New Album'!"
   end
 
   test "should get new" do

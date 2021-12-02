@@ -1,23 +1,23 @@
 %p
-  %b Title:
+  %b= t('albums.form.title')
   = @album.title
 %p
-  %b Artist:
+  %b= t('albums.form.artist')
   = @album.artist.name
 %p
-  %b Description:
+  %b= t('albums.form.desc')
   = @album.description
 %p
-  %b Release Date:
+  %b= t('albums.form.release')
   = @album.release
 %p
-  %b Number of Songs:
+  %b= t('albums.form.numOfSongs')
   = @album.numOfSongs
 %p
-  %b Length (mins):
+  %b= t('albums.form.length')
   = @album.length
 
-%p Songs:
+%p= t('albums.songs')
 %table
   %tbody
     - @album.songs.each do |song|

@@ -1,11 +1,11 @@
 %p
-  %b Title:
+  %b= t('songs.form.title')
   = @song.title
 %p
-  %b Album:
+  %b= t('songs.form.album')
   = @song.album.title
 %p
-  %b Length:
+  %b= t('songs.form.length')
   = @song.length
 
 = link_to t('songs.edit'), edit_song_path(@song)

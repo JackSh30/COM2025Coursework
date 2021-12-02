@@ -1,13 +1,13 @@
-%h1 Listing songs
-%h2 To Create a new song, go to an album and click 'Add Song'!
+%h2= t('songs.listing')
+%h3= t('songs.create')
 
 %table
   %thead
     %tr
-      %th Title
-      %th Album
-      %th Artist
-      %th Length (Mins)
+      %th= t('songs.form.title')
+      %th= t('songs.form.album')
+      %th= t('songs.form.artist')
+      %th= t('songs.form.length')
       %th
       %th
       %th

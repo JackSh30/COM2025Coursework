@@ -12,6 +12,7 @@ class ArtistsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get artists_url
     assert_response :success
+    assert_select 'h2', 'ARTISTS'
   end
 
   test "should get new" do

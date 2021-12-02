@@ -34,13 +34,20 @@ en:
   app_description: An application to store details of your favourite artists, albums and songs.
   confirm: Are you sure?
   save: Save
+  error: error
   read: "Read the terms and conditions to save your changes. Have you read the"
   tsandcs: terms and conditions
 
   home:
     home:
-      title: Home Page
-      welcome: Welcome to my music library!
+      title: Terms and Conditions
+      welcome: "Welcome to my music library! Please read the following before using the music library:"
+      rule1: No Harassment.
+      rule2: Don't edit or delete artists/albums/songs added by other users.
+      rule3: We cannot guarantee the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose.
+      rule4: Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable.
+      rule5: This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
+      rule6: No Bad Music.
 
     contact:
       title: Contact Us
@@ -61,9 +68,11 @@ en:
       email_sent: Thank you. We will be in touch shortly.
 
   artists:
+    listing: ARTISTS
     add_album: New Album
     return: Back
     success: Artist was successfully created.
+    failure: " prohibited this artist from being saved:"
     show: View Details
     edit: Edit Artist
     destroy: Delete Artist
@@ -71,14 +80,18 @@ en:
     view: View Artist
     new_artist: New Artist
     editing: Editing Artist
+    albums: "Albums:"
     form:
-      name: "Artist:"
+      name: "Name:"
       desc: "Description:"
       active: "Active?:"
 
   albums:
+    listing: ALBUMS
+    create: To Create a new album, go to an artist and click 'New Album'!
     add_song: Add Song
     success: Album was successfully created.
+    failure: " prohibited this album from being saved:"
     show: View Details
     edit: Edit Album
     destroy: Delete Album
@@ -86,16 +99,20 @@ en:
     view_all: View All Albums
     new_album: New Album
     editing: Editing Album
+    songs: "Songs:"
     form:
       artist: "Artist:"
       title: "Title:"
       desc: "Description:"
-      release: "Release:"
+      release: "Release Date:"
       numOfSongs: "Number Of Songs:"
       length: "Length (mins):"
 
   songs:
+    listing: SONGS
+    create: To Create a new song, go to an album and click 'Add Song'!
     success: Song was successfully created.
+    failure: " prohibited this song from being saved:"
     show: View Details
     edit: Edit Song
     destroy: Delete Song
@@ -113,3 +130,16 @@ en:
     login: Login
     logout: Logout
     sign_up: Create an Account
+
+  footer:
+    desc: This site is for storing details of your favourite artists, albums and songs.
+
+  header:
+    title: Jack's Music Library
+
+  navbar:
+    home: Home
+    artists: View Artists
+    albums: View Albums
+    songs: View Songs
+    contact: Contact Us

@@ -1,15 +1,15 @@
-%h1 Listing albums
-%h2 To Create a new album, go to an artist and click 'New Album'!
+%h2= t('albums.listing')
+%h3= t('albums.create')
 
 %table
   %thead
     %tr
-      %th Title
-      %th Artist
-      %th Description
-      %th Release Date
-      %th Number of songs
-      %th Length (Mins)
+      %th= t('albums.form.title')
+      %th= t('albums.form.artist')
+      %th= t('albums.form.desc')
+      %th= t('albums.form.release')
+      %th= t('albums.form.numOfSongs')
+      %th= t('albums.form.length')
       %th
       %th
       %th
