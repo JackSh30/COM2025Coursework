@@ -1,4 +1,14 @@
 class HomeController < ApplicationController
+  include ActionController::Live
+
+  def clock
+    response.headers['Content-Type'] = 'text/event-stream'
+    sse = SSE.new(response.stream, retry: 1000, event: "clock")
+    sse.write({value: Time.now.strftime("%Y-%m-%d %H:%M:%S")})
+  ensure
+    response.stream.close
+  end
+
   def home
   end
 

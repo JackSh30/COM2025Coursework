@@ -1,0 +1,8 @@
+$(document).ready(function() {
+  var eventSource = new EventSource(
+    "<%= Rails.application.routes.url_helpers.home_clock_path %>");
+  $(eventSource).bind("clock", function(event) {
+    var data = $.parseJSON(event.originalEvent.data);
+    $('#clock').html(data.value);
+  });
+});
