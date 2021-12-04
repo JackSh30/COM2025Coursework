@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
   before_action :set_song, only: %i[ show edit update destroy ]
-  before_action :set_album, only: [:new, :create]
-  before_action :authenticate_user!, only: %i[ new edit update destroy]
+  before_action :set_album, only: [:new, :create] #Songs belong to an album.
+  before_action :authenticate_user!, only: %i[ new edit update destroy] #User must be logged in to make changes to songs relation.
 
 
   # GET /songs or /songs.json
@@ -41,7 +41,7 @@ class SongsController < ApplicationController
   def update
     respond_to do |format|
       if @song.update(song_params)
-        format.html { redirect_to @song, notice: "Song was successfully updated." }
+        format.html { redirect_to @song, notice: t('songs.update_success') }
         format.json { render :show, status: :ok, location: @song }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -54,14 +54,15 @@ class SongsController < ApplicationController
   def destroy
     @song.destroy
     respond_to do |format|
-      format.html { redirect_to songs_url, notice: "Song was successfully destroyed." }
-      format.js { flash[:notice] = 'Song was successfully destroyed.'}
+      format.html { redirect_to songs_url, notice: t('songs.destroy_success') }
+      format.js { flash[:notice] = t('songs.destroy_success')}
       format.json { head :no_content }
     end
   end
 
   private
 
+    #Method to set album that song belongs to.
     def set_album
       @album = Album.find_by(id: params[:album_id]) ||
       Album.find(song_params[:album_id])

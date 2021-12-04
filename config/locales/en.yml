@@ -73,6 +73,8 @@ en:
     add_album: New Album
     return: Back
     success: Artist was successfully created.
+    update_success: "Artist was successfully updated."
+    destroy_success: "Artist was successfully destroyed."
     failure: " prohibited this artist from being saved:"
     show: View Details
     edit: Edit Artist
@@ -92,6 +94,8 @@ en:
     create: To Create a new album, go to an artist and click 'New Album'!
     add_song: Add Song
     success: Album was successfully created.
+    update_success: "Album was successfully updated."
+    destroy_success: "Album was successfully destroyed."
     failure: " prohibited this album from being saved:"
     show: View Details
     edit: Edit Album
@@ -113,6 +117,8 @@ en:
     listing: SONGS
     create: To Create a new song, go to an album and click 'Add Song'!
     success: Song was successfully created.
+    update_success: "Song was successfully updated."
+    destroy_success: "Song was successfully destroyed."
     failure: " prohibited this song from being saved:"
     show: View Details
     edit: Edit Song

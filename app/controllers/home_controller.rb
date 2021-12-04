@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   include ActionController::Live
 
+  # Method to stream data and time to home page.
   def clock
     response.headers['Content-Type'] = 'text/event-stream'
     sse = SSE.new(response.stream, retry: 1000, event: "clock")
@@ -12,6 +13,7 @@ class HomeController < ApplicationController
   def home
   end
 
+  # For Contact page so user can send an email.
   def contact
   end
 
